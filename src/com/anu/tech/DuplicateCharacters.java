@@ -1,5 +1,8 @@
 package com.anu.tech;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class DuplicateCharacters {
 
 	public static void main(String[] args) {
@@ -20,6 +23,4 @@ public class DuplicateCharacters {
 			}
 		}
 
-	}
-
-}
+	}}
