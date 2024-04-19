@@ -37,7 +37,7 @@ public class FrequecnyTest {
 		//find only non repeated one in string 
 		
 		List<String> filtredData3 = citiesList.stream().filter(c-> Collections.frequency(citiesList, c)<=1).collect(Collectors.toList());
- System.out.println("non repeated one "+filtredData3);
+        System.out.println("non repeated one "+filtredData3);
 		
 
 	}
