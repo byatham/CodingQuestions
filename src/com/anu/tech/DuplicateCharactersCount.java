@@ -8,7 +8,7 @@ public class DuplicateCharactersCount {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String name="balaiah";
+		String name="balaiah";// out put  {a=3, b=1, h=1, i=1, l=1}
 		char[] nameChar=name.toCharArray();
 		Map<Character,Integer> countMap=new HashMap<>();
 		for(char ch: nameChar)
