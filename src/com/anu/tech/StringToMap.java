@@ -9,11 +9,13 @@ public class StringToMap {
 		// TODO Auto-generated method stub
 		
 		String str = "ProductCode = 123, ProductName=Tshirt, ProductSize=Small";
-		String[] split = str.split(" = ");
-		for(String st:split)
-		{
-			//System.out.println(st);
-		}
+		String[] split = str.split("=");
+		System.out.println(split.toString());
+		int k=0;
+		
+		/*
+		 * for(String st:split) { //System.out.println(st); }
+		 */
 		
 		Map<String,String> map=new HashMap<>();
 		
@@ -26,21 +28,39 @@ public class StringToMap {
 		 }
 	 }
 	 
-	 //map print anditerate
+	 for(int i=0; i<split.length;i++)
+	 {
+		 
+		 while(i+1>i)
+		 {
+			 map.put(split[i],split[i+1]);
+			 break;
+			// System.out.println(map);
+		 }
+	 }
+	 
+	 System.out.println(map);
+		/*
+		 * for(int i=0; i<split.length;i++) { do { map.put(split[i],split[i+1]); }
+		 * while(true) {
+		 * 
+		 * // System.out.println(map); } }
+		 */
+	 
+	 
+	 //map print and iterate
 	 for(Map.Entry<String, String> myMap:map.entrySet())
 	 {
-		 System.out.println("key - "+myMap.getKey()+" Value - "+myMap.getValue());
+		// System.out.println("key - "+myMap.getKey()+" Value - "+myMap.getValue());
 	 }
-    System.out.println(map);
-    System.out.println("*******************");
-    
-    Map<String,String> demoMap=new HashMap<>();
-    
-    demoMap.put("name", "Balaiah");
-    demoMap.put("education", "B.TECH");
-    System.out.println(demoMap);
-
-   
+		/*
+		 * System.out.println(map); System.out.println("*******************");
+		 * 
+		 * Map<String,String> demoMap=new HashMap<>();
+		 * 
+		 * demoMap.put("name", "Balaiah"); demoMap.put("education", "B.TECH");
+		 * System.out.println(demoMap);
+		 */
 	}
 
 	
