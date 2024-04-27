@@ -1,10 +1,5 @@
 package com.anu.tech;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
 public class DuplicatesInArray {
 
 	public static void main(String[] args) {
