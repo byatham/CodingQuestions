@@ -4,7 +4,7 @@ public class StringContainsVowels {
 
 	public static void main(String[] args) {
 		System.out.println(stringContainsVowels("hello")); // true
-		System.out.println(stringContainsVowels("Mobile")); // false
+		System.out.println(stringContainsVowels("bbbb")); // false
 	}
 
 	public static boolean stringContainsVowels(String input) {
