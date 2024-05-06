@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Duplicates {
 
@@ -19,7 +17,7 @@ public class Duplicates {
 		int[] numbers= {1,3,4,2,2,5,5,5};
 		List<int[]> asList = Arrays.asList(numbers);
 		Set<int[]> collect2 = asList.stream().filter(n-> Collections.frequency(asList, n)>=1).collect(Collectors.toSet());
-		System.out.println(collect2);
+		System.out.println(collect2.toString());
 		//asList.stream().filter(n-> Collections.frequency(asList, n)<=1).forEach(System.out::println);
 		
 		/*

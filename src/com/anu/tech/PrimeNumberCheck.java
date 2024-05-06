@@ -12,7 +12,7 @@ public class PrimeNumberCheck {
 		//int b=20;
 		//System.out.println(a/2);// quotient value
 		//System.out.println(a%2);// reminder
-
+ 
 	}
 
 	public static boolean isPrime(int   n) {
