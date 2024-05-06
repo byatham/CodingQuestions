@@ -1,20 +1,49 @@
 package com.anu.tech;
 
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.LongStream;
 
+/*
+In the sequential stream, operations are performed on elements one by one.
+In the parallel stream, the framework automatically divides the data into multiple sub parts and processes them concurrently using multiple threads.
+
+*/ 
 public class StreamAndParallelStream {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.out.println("****************************");
-		long starting, ending;
-		Stream<Integer> numStream = Stream.of(1,2,3,4,5,6,7,8,9);
 		
-		 starting= System.currentTimeMillis(); // get the starting time
-		 numStream.parallel().forEach(System.out::println);
-		 Thread.sleep(5000);
-		 ending=System.currentTimeMillis(); // get ending time
-		   System.out.println("Elapsed time: "+(ending-starting));
-   
-	}
+		        // Create a list of numbers
+		        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,9);
+		        
+		        // Sequential stream example
+		        long currentTimeMillisStarts = System.currentTimeMillis();
+		        long sumOfSquaresSequential = numbers.stream()
+		                                              .mapToLong(num -> num * num)
+		                                              .sum();
+		        
+		        System.out.println("Sum of squares using sequential stream: " + sumOfSquaresSequential);
+		        long currentTimeMillisEnds = System.currentTimeMillis();
+		        System.out.println("stream time difference: "+(currentTimeMillisEnds-currentTimeMillisStarts));
 
+		        
+		        // Parallel stream example
+		        
+		        long currentTimeMillisStarts2 = System.currentTimeMillis();
+		        long sumOfSquaresParallel = numbers.parallelStream()
+		                                            .mapToLong(num -> num * num)
+		                                            .sum();
+		        
+		        System.out.println("Sum of squares using parallel stream: " + sumOfSquaresParallel);
+		        long currentTimeMillisEnds2 = System.currentTimeMillis();
+		        System.out.println("parallelStream Time  difference: "+(currentTimeMillisEnds2-currentTimeMillisStarts2));
+		        
+		      
+		        
+		        
+
+		    }
 }
+
+  
+

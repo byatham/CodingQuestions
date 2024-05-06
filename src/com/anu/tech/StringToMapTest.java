@@ -7,12 +7,12 @@ public class StringToMapTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String text="Aashish:1, Bina:2, Chintu:3";
+		String text="Balaiah:1, Nani:2, Chinni:3";
 		System.out.println("given text as string :: "+text);
 		String[] parts = text.split(",");
 		
 		Map<String,String> studentMap=new HashMap<>();
-		Map<String,String> productMap=new HashMap<>();
+		
 		
 		for(String part:parts)
 		{
@@ -28,7 +28,7 @@ public class StringToMapTest {
 			
 		
 		// 
-		
+		Map<String,String> productMap=new HashMap<>();
 		String products = "ProductCode = 123, ProductName= Tshirt, ProductSize  =  Small";
 		String[] productParts = products.split(",");
 		
