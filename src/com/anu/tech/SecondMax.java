@@ -25,14 +25,8 @@ public class SecondMax {
 	                .skip(1) // Skip the first element, which is the maximum
 	                .findFirst(); // Get the second maximum if it exists
 	        
-	        System.out.println(" second  "+secondMax1.get());
-	        
-	        System.out.println("************* ");
-	        List<Integer> list=Arrays.asList(1,2,3,4,5,6,7,8,9,10);
-	        int size = list.size();
-	        System.out.println("size "+size);
-	       int tt=size/2;
-	       System.out.println(list.get(tt));
+	        System.out.println(" second max number "+secondMax1.get());
+	       
 	    }
 
 	}
