@@ -1,4 +1,4 @@
-package com.anu.tech;
+package com.anu.tech.arrays;
 
 public class ReverseArray {
 

@@ -1,4 +1,4 @@
-package com.anu.tech;
+package com.anu.tech.string;
 //Write a Java program to check if a vowel is present in a string.
 public class StringContainsVowels {
 

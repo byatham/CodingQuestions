@@ -1,4 +1,4 @@
-package com.anu.tech;
+package com.anu.tech.min.max;
 
 import java.util.Arrays;
 import java.util.List;

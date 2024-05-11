@@ -12,7 +12,8 @@ public class EachCharCountByStreams {
 		        // Count occurrences of each character
 		        Map<Character, Long> charCounts = str.chars() // IntStream
 		                .mapToObj(c -> (char) c) // Convert to Stream<Character>
-		                .filter(c-> String.valueOf(c).toString().matches(".*[aeiou].*"))
+		                .filter(c-> String.valueOf(c).length()==1)
+		                
 		                //.max(Character::compareTo)
 		                .collect(Collectors.groupingBy(c -> c, Collectors.counting())); // Count occurrences
 		        
