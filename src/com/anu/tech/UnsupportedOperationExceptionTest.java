@@ -14,15 +14,15 @@ public class UnsupportedOperationExceptionTest {
 		Iterator<Integer> it = list.iterator();
 		while (it.hasNext()) {
 			Integer value = it.next();
-		 System.out.println("List Value:" + value);
+			System.out.println("List Value:" + value);
 			if (value.equals(3)) {
 				list.remove(value);
 
 			}
 
-			System.out.println("final list "+list);
+			System.out.println("final list " + list);
 		}
-//faq 2 
+   //faq 2 check below code and guess output
 		List<Integer> asList = Arrays.asList(10, 20, 30, 40, 50);
 
 		asList.stream().forEach(x -> {

@@ -11,17 +11,17 @@ public class DuplicatesInArray {
 		for(int i=0; i<list.length;i++)
 		{
 			
-			boolean repeated=false;
+			//boolean repeated=false;
 			for( int j=i+1; j<list.length;j++)
 			{
 				if(list[i]==list[j])
 				{
 					System.out.println(list[i]);
-					repeated=true;
+					//repeated=true;
 					
 				}
 			}
-			 repeated=false;
+			 //repeated=false;
 			
 		}
 
