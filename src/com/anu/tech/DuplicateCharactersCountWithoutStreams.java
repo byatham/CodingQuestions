@@ -3,7 +3,7 @@ package com.anu.tech;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicateCharacters {
+public class DuplicateCharactersCountWithoutStreams {
 
 	public static void main(String[] args) {
 		// count only duplicated chars
@@ -11,7 +11,7 @@ public class DuplicateCharacters {
 		char[] nameChar = name.toCharArray();
 		Map<Character, Integer> countMap = new HashMap<>();
 		for (int i = 0; i < nameChar.length; i++) {
-			// boolean repeated=false;
+			
 			for (int j = i + 1; j < nameChar.length; j++) {
 				if (nameChar[i] == nameChar[j]) {
 

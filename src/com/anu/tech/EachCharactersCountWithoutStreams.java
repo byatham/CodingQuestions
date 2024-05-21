@@ -3,7 +3,7 @@ package com.anu.tech;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicateCharactersCount {
+public class EachCharactersCountWithoutStreams {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
