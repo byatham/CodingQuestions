@@ -13,6 +13,7 @@ public class ConcurrentCollectionsTest {
 		map.put("key", 1);
 		map.putIfAbsent("key", 2);
 		map.putIfAbsent("key1", 3);
+		
          System.out.println("map "+map);
 
 	}

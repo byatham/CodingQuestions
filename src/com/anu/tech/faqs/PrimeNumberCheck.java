@@ -1,4 +1,4 @@
-package com.anu.tech;
+package com.anu.tech.faqs;
 
 //Write a Java program to check if the given number is a prime number.
 
