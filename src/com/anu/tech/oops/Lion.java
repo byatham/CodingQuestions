@@ -5,12 +5,12 @@ public class Lion {
 	private String name="Lion";
 	public String food="non veg";
 	public Lion() {
-		System.out.println("Animal()");
+		System.out.println("Lion()");
 	}
 	
 	public void print()
 	{
-		System.out.println("Animal print()");
+		System.out.println("Lion print()");
 	}
 	
 }

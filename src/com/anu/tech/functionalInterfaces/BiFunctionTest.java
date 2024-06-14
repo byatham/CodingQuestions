@@ -12,9 +12,9 @@ public class BiFunctionTest {
 		// TODO Auto-generated method stub
 		
 		
-		List<Integer> list1=Arrays.asList(1,2,3,40,50,60,70);
+		List<Integer> list1=Arrays.asList(1,2,3,6);
 		
-		List<Integer> list2=Arrays.asList(1,2,3,10,20,30,70);
+		List<Integer> list2=Arrays.asList(1,2,3,10);
 		
 		BiFunction<List<Integer>, List<Integer>,List<Integer>>  test=new BiFunction<List<Integer>, List<Integer>, List<Integer>>() {
 			

@@ -5,27 +5,29 @@ public class Rabbit extends Lion{
 	private String name="Rabbit";
 	public String food="veg";
 	public Rabbit() {
+		super();
 		System.out.println("Rabbit()");
 	}
 	
 	public void print()
 	{
+		
 		System.out.println("Rabbit print()");
 	}
 
 	public static void main(String[] args) {
 		// creating objects for both parent and child
-		// parent = Animal
+		// parent = Lion
 		// child= Rabbit
 		
-		Rabbit obj=new Rabbit(); // this code will be execute two constructors 1. Animal()  and 2. Rabbit()
+		Rabbit obj=new Rabbit(); // this code will be execute two constructors 1. Lion()  and 2. Rabbit()
 		
 		obj.print();//  will give output  Rabbit print()
 		System.out.println(obj.name);//Rabbi
 		System.out.println(obj.food);//veg
 		System.out.println("***************************");
-		Lion obj1=new Lion(); // this code will be execute one constructor 1. Animal()
-		obj1.print();//Animal print()
+		Lion obj1=new Lion(); // this code will be execute one constructor 1. Lion()
+		obj1.print();//Lion print()
 		//System.out.println(obj1.name);//compiler shows change visibility of name to protected
 		System.out.println(obj1.food);//non veg
 		

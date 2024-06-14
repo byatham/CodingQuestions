@@ -22,12 +22,6 @@ public class EachWordCountWithStreams {
 		// Print the result with each word count
 		wordCounts.forEach((word, count) -> System.out.println(word + ": " + count));
 
-		/*
-		 * Map<String,Integer> map=new HashMap<>(); map.put("balaiah", 1);
-		 * map.put("nagaiah", 3);
-		 * 
-		 * map.forEach((a,b)-> System.out.println(a+" "+b));
-		 */
 
 		List<Integer> numbers = Arrays.asList(1, 2, 1, 3, 2, 4, 5, 4, 5, 6, 7, 1, 1);
 

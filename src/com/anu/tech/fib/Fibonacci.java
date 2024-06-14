@@ -12,8 +12,15 @@ public class Fibonacci {
         int[] fibSeries = new int[n];
         
         // Initialize the first two terms
-        if (n >= 1) fibSeries[0] = 0;
-        if (n >= 2) fibSeries[1] = 1;
+        if (n >= 1)
+        	{
+        	fibSeries[0] = 0;
+        	}
+        
+        if (n >= 2) 
+        	{
+        	fibSeries[1] = 1;
+        	}
 
         // Generate the Fibonacci series
         for (int i = 2; i < n; i++) {
@@ -29,7 +36,7 @@ public class Fibonacci {
 }
 
     public static void main(String[] args) {
-        int n = 2; // Number of terms
+        int n = 25; // Number of terms
         generateFibonacci(n);
     }
 

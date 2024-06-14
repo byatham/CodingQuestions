@@ -9,7 +9,7 @@ public class NumberStartWithOne {
 	public static void main(String[] args) {
 		
 		int[] numbers= {1,2,4,6,10,13,20};
-		//find dumbers start with one
+		//find numbers start with one
 		
 		//List<String> convertedArray = Arrays.stream(numbers).boxed().map(s->s+"").collect(Collectors.toList());
 		

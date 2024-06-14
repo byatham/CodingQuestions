@@ -12,6 +12,8 @@ public class SkipAndLimit {
 		.skip(1)
 		.limit(8)
 		.forEach(System.out::print);
+		
+		//output  23456789
 
 	}
 

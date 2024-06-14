@@ -10,14 +10,14 @@ public class MissingNumbersFromList {
         List<Integer> givenList = new ArrayList<>();
         givenList.add(1);
         givenList.add(2);
+        givenList.add(3);
         givenList.add(4);
-        givenList.add(6);
-        givenList.add(7);
+        givenList.add(5);
         // Add the rest of the given numbers here
 
         // Create a list of numbers from 1 to 100
         List<Integer> fullList = new ArrayList<>();
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 10; i++) {
             fullList.add(i);
         }
 

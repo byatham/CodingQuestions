@@ -1,5 +1,6 @@
 package com.anu.tech.faqs;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -17,5 +18,10 @@ public class EachCharCountByStreams {
 
 		// Print the result
 		charCounts.forEach((character, count) -> System.out.println(character + ": " + count));
+		
+		//another way
+		
+		Map<String, Long> collect = Arrays.stream(str.split("")).collect(Collectors.groupingBy(x->x,Collectors.counting()));
+		System.out.println(collect);
 	}
 }
