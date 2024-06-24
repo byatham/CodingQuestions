@@ -16,6 +16,7 @@ public class TreeMapExample {
         TreeMap<String, Integer> treeMap = new TreeMap<>();
 
         // Add elements to the TreeMap
+        //natural sorting order
         
         treeMap.put("Banana", 20);
         treeMap.put("Orange", 30);

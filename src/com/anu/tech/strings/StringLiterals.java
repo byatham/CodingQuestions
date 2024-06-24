@@ -15,6 +15,15 @@ public class StringLiterals {
 		System.out.println(name.intern());
 		
 		System.out.println(name==name1);
+		
+		System.out.println("************************* ");
+		
+		String message=new String("Hello");
+		
+		String message1="Hello";
+		
+		
+		System.out.println(message.intern().hashCode()==message1.hashCode());
 	
 
 	}

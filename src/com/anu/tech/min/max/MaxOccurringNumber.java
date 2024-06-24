@@ -1,4 +1,4 @@
-package com.anu.tech.duplicates;
+package com.anu.tech.min.max;
 
 import java.util.HashMap;
 import java.util.Map;

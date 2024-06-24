@@ -7,8 +7,22 @@ public class Employee {
 	private String name;
 	private int age;
 	private String address;
+	private String branch;
 	
 	
+	public Employee(String name, int age, String address, String branch) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.branch = branch;
+	}
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
 	@Override
 	public int hashCode() {
 		return Objects.hash(address, age, name);

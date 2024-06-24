@@ -22,7 +22,7 @@ public class HashtableExample {
         hashtable.put("Orange", 30);
         hashtable.put("Grapes", 40);
         hashtable.put("Grapes", 40);
-       // hashtable.put(null, 40); //Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+       //hashtable.put(null, 40); //Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
         //hashtable.put("Grapes", null);// Exception in thread "main" java.lang.NullPointerException
 
 

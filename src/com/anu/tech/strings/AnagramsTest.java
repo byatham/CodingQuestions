@@ -1,7 +1,5 @@
 package com.anu.tech.strings;
 
-import java.util.Arrays;
-
 public class AnagramsTest {
 
 	public static void main(String[] args) {

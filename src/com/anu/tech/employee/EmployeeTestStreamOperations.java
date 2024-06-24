@@ -12,10 +12,12 @@ public class EmployeeTestStreamOperations {
 		
 		Employee e1=new Employee("balaiah", 36, "hyderabad");
 		Employee e2=new Employee("nagaiah", 30, "secunderabad");
-		Employee e3=new Employee("balaiah", 33, "hyderabad");
-		
+		Employee e3=new Employee("balaiah", 35, "hyderabad");
+		Employee e4=new Employee("yellaiah", 39, "hyderabad");
+		Employee e5=new Employee("chennaiah", 40, "hyderabad");
+
         System.out.println("******************");
-        List<Employee> asList = Arrays.asList(e1,e2,e3);
+        List<Employee> asList = Arrays.asList(e1,e2,e3,e4,e5);
         //removing duplicates by using distinct()
         asList.stream().distinct().forEach(System.out::println);
         
@@ -44,7 +46,16 @@ public class EmployeeTestStreamOperations {
         System.out.println(min.get());
         
        // listN.stream().map(Comparator.reverseOrder()).skip(1);
-
+        
+        List<Employee> namesBased = asList.stream().filter(x-> x.getName().startsWith("ba")).collect(Collectors.toList());
+        
+        System.out.println(namesBased);
+        
+        asList.stream().map(x-> x.getAge()).sorted(Comparator.reverseOrder())
+        //.skip(0)
+        .limit(3)
+        .forEach(System.out::println);
+   
 	}
 
 }

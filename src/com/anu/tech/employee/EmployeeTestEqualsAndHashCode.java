@@ -13,13 +13,13 @@ public class EmployeeTestEqualsAndHashCode {
 		Employee e2=new Employee("nagaiah", 30, "secunderabad");
 		Employee e3=new Employee("balaiah", 33, "hyderabad");
 		
-    System.out.println("******************");
+        System.out.println("******************");
 		
 		System.out.println(e1==e2);// false
 		System.out.println(e1==e3);// false
 		System.out.println(e2==e3); //false  all because we are using new key word to create object hence all object have different addresses
 		
-		System.out.println(e1.hashCode()==e3.hashCode());
+		System.out.println(e1.hashCode()==e3.hashCode());//true
 		System.out.println(e3.hashCode());
 		System.out.println("*******************");
 		System.out.println(e1.equals(e2));// false //checking with objects content
