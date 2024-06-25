@@ -1,4 +1,4 @@
-package com.anu.tech.string;
+package com.anu.tech.strings;
 
 import java.util.HashMap;
 import java.util.Map;

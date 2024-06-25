@@ -24,6 +24,7 @@ public class StreamOperations {
 
 		// removing duplicates
 		list.stream().distinct().forEach(System.out::println);
+		System.out.println("^*^*^*&^");
 
 		// finding duplicates by using frequency method
 		Set<String> collect = list.stream().filter(s -> Collections.frequency(list, s) >= 1)

@@ -1,4 +1,4 @@
-package com.anu.tech.string;
+package com.anu.tech.strings;
 
 public class StringToMapJavaStreams {
     public static void main(String[] args) {

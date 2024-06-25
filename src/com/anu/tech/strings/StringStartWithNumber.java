@@ -1,4 +1,4 @@
-package com.anu.tech.string;
+package com.anu.tech.strings;
 
 import java.util.ArrayList;
 import java.util.List;
